@@ -1,4 +1,4 @@
-import { redirect } from "react-router";
+import { json, redirect } from "react-router";
 import ChooseAnApartment from "../components/Reservation Request Page Components/Reservation Form Components/ChooseApartmentSection";
 import FormSection from "../components/Reservation Request Page Components/Reservation Form Components/FormSection";
 import FormSectionHeader from "../components/Reservation Request Page Components/Reservation Form Components/FormSectionHeader";
@@ -66,7 +66,7 @@ const action = async ({ request, params }) => {
   });
 
   if (!response.ok) {
-    // Do something!!
+    throw json({ message: "Could not send email" }, { status: 500 });
   }
   return redirect("/reservations/confirmation");
 };

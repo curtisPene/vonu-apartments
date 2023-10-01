@@ -1,0 +1,11 @@
+.error-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.error-page a {
+  text-decoration: none;
+  color: var(--color-accent-coral-500);
+}

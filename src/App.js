@@ -6,12 +6,14 @@ import ResRequest, { action as requestAction } from "./pages/ResRequest";
 import ApartmentInfo from "./pages/ApartmentInfo";
 import RequestConfirmationPage from "./pages/RequestConfirmation";
 import PoliciesPage from "./pages/Policies";
+import ErrorPage from "./pages/Error";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <RootLayout />,
+      errorElement: <ErrorPage />,
       children: [
         { index: true, element: <HomePage /> },
         {
