@@ -55,9 +55,9 @@ const action = async ({ request, params }) => {
     email,
   };
 
-  const apiUrl = process.env.REACT_APP_API_URL;
+  const REACT_APP_API_URL = process.env.REACT_APP_API_URL;
 
-  const response = await fetch(apiUrl, {
+  const response = await fetch(REACT_APP_API_URL, {
     method: "post",
     headers: {
       "Content-type": "application/json",
