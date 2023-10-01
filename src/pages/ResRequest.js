@@ -55,7 +55,9 @@ const action = async ({ request, params }) => {
     email,
   };
 
-  const response = await fetch("http://localhost:8080/reservations", {
+  const apiUrl = process.env.REACT_APP_API_URL;
+
+  const response = await fetch(apiUrl, {
     method: "post",
     headers: {
       "Content-type": "application/json",
