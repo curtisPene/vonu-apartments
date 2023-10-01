@@ -1,0 +1,28 @@
+.mobile-nav {
+  position: fixed;
+  left: calc(-100%);
+  top: 74px;
+  width: calc(100vw - 32px);
+  height: 100%;
+  opacity: 100%;
+  background-color: var(--color-primary-700);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-top: 48px;
+  transition: all 0.75s ease-in-out; /* Add a smooth transition to the left property */
+}
+
+.mobile-nav.open {
+  left: 16px;
+}
+
+.mobile-nav p {
+  color: white;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+}

@@ -1,0 +1,57 @@
+.date-item {
+  padding: 4px;
+  position: relative;
+}
+
+.date-item p {
+  color: var(--date-picker-fill);
+  font-family: "roboto";
+  font-size: 14px;
+  text-align: center;
+}
+
+.date-item:hover {
+  cursor: pointer;
+}
+
+.in-range::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid rgba(206, 143, 104, 1);
+  z-index: -1;
+}
+
+.start::before,
+.end::before {
+  content: "";
+  background-color: var(--color-primary-500);
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(206, 143, 104, 1);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@media (max-width: 368px) {
+  .date-item {
+    padding: 4px;
+  }
+
+  .date-item p {
+    color: var(--date-picker-fill);
+    font-family: "roboto";
+    font-size: 12px;
+    text-align: center;
+  }
+}

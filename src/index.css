@@ -1,13 +1,106 @@
-body {
+/* Reset styles for all elements */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* width: calc((100% - (N - 1) * 8px) / N * SpannedColumns); */
+
+/* Define custom properties (CSS variables) */
+:root {
+  --color-primary-700: #805840; /* Darker primary color */
+  --color-primary-700-transparent: rgba(128, 89, 64, 0.3); /* Overlay color */
+  --color-primary-500: #ce8f68; /* Primary color */
+  --color-accent-coral-500: #ff5151; /* Accent color - coral */
+  --color-neutrals-50: #f8f6f5; /* Light neutral color */
+  --color-accent-coral-700: #bb5252; /* Darker shade of coral */
+  --color-accent-coral-850: #8a2a2a; /* Even darker shade of coral */
+  --color-neutral-800: #4a433f; /* Dark neutral color */
+  --color-neutral-900: #25211f; /* Darkest neutral color */
+}
+
+/******************** Global Styles for Small Screen Sizes (320px to 480px) ********************/
+body {
+  background-color: var(
+    --color-neutrals-50
+  ); /* Background color for the entire body */
+  padding-left: 16px; /* Left margin for the body */
+  padding-right: 16px; /* Right margin for the body */
+}
+
+html,
+body,
+#root,
+.wrapper {
+  height: 100%;
+}
+
+/* Heading 1 Style */
+h1 {
+  font-size: 24px; /* Font size */
+  font-family: "Playfair Display"; /* Font family */
+  font-weight: 400; /* Font weight (normal) */
+  font-style: normal; /* Font style (normal) */
+  line-height: 32px; /* Line height */
+  text-decoration: none; /* No text decoration */
+  text-transform: none; /* No text transformation */
+}
+
+/* Heading 3 Style */
+h3 {
+  font-size: 21px; /* Font size */
+  font-family: "Playfair Display"; /* Font family */
+  font-weight: 400; /* Font weight (normal) */
+  font-style: normal; /* Font style (normal) */
+  line-height: 32px; /* Line height */
+  text-decoration: none; /* No text decoration */
+  text-transform: none; /* No text transformation */
+}
+
+/* Paragraph Style */
+p {
+  font-size: 16px; /* Font size */
+  font-family: "Lato"; /* Font family */
+  font-weight: 400; /* Font weight (normal) */
+  font-style: normal; /* Font style (normal) */
+  line-height: 24px; /* Line height */
+  text-decoration: none; /* No text decoration */
+  text-transform: none; /* No text transformation */
+}
+
+/* Additional Styles for Specific Elements */
+.subbody-xs,
+label {
+  font-size: 15px; /* Font size */
+  font-family: "Lato"; /* Font family */
+  font-weight: 400; /* Font weight (normal) */
+  font-style: normal; /* Font style (normal) */
+  line-height: 24px; /* Line height */
+  text-decoration: none; /* No text decoration */
+  text-transform: none; /* No text transformation */
+}
+
+.fine-print-xs {
+  font-size: 14px; /* Font size */
+  font-family: "Lato"; /* Font family */
+  font-weight: 400; /* Font weight (normal) */
+  font-style: normal; /* Font style (normal) */
+  line-height: 24px; /* Line height */
+  text-decoration: none; /* No text decoration */
+  text-transform: none; /* No text transformation */
+}
+
+.fill-window {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.drop-shadow {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 426px) {
 }

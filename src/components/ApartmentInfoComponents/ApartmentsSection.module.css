@@ -1,0 +1,11 @@
+.apartments-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+  color: var(--color-primary-700);
+}
+
+.apartments-section h3 {
+  color: var(--color-accent-coral-500);
+}

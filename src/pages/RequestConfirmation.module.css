@@ -1,0 +1,43 @@
+.request-confirmation {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+  padding: 8px 8px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.request-confirmation h3,
+.request-confirmation a:visited {
+  color: var(--color-accent-coral-500);
+}
+
+.request-confirmation p {
+  color: var(--color-primary-700);
+}
+
+.request-confirmation a {
+  text-decoration: none;
+  color: var(--color-accent-coral-500);
+  text-decoration: underline;
+}
+
+.home-link {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.home-link img {
+  width: 12px;
+  height: 12px;
+}
+
+.home-link p {
+  color: var(--color-accent-coral-500);
+}

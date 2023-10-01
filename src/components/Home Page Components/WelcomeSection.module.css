@@ -1,0 +1,27 @@
+.welcome-section {
+  position: relative;
+  background: var(--Primary---700, #805840);
+}
+
+.welcome-section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 16px;
+  color: white;
+  height: 342px;
+}
+
+.welcome-section-container h3,
+.welcome-section-container p {
+  width: 82%;
+  color: rgb(255, 255, 255);
+}
+
+.plant {
+  /* width: 114px; */
+  height: 136px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

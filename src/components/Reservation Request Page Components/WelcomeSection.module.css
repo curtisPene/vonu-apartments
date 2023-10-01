@@ -1,0 +1,14 @@
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 16px;
+}
+
+.welcome-section h3 {
+  color: var(--color-accent-coral-500);
+}
+
+.welcome-section p {
+  color: var(--color-primary-700);
+}

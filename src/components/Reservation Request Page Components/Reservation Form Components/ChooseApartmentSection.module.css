@@ -1,0 +1,74 @@
+.choose-an-apartment-section {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 8px;
+}
+
+.check-apartment {
+  visibility: hidden;
+}
+
+.choose-an-apartment-container {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 8px;
+  border-radius: 8px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.choose-an-apartment-container > img {
+  border-radius: 8px;
+}
+
+.info-and-selection-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 8px;
+}
+
+.info-and-selection-container img {
+  padding: 1px;
+  height: 24px;
+}
+
+.apartment-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 12px;
+}
+
+button {
+  padding: 4px 24px;
+  vertical-align: middle;
+  background-color: white;
+  border: 1px solid var(--color-primary-700);
+  height: 32px;
+  color: var(--color-primary-700);
+  transition: all 0.25s ease-in;
+}
+
+.selected {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 0px;
+  vertical-align: middle;
+  background-color: white;
+  border: 1px solid var(--color-primary-700);
+  height: 32px;
+  color: var(--color-primary-700);
+  /* background-image: url("/src/assets/svg/tick.svg");
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+.tick {
+  background-image: url("/src/assets/svg/tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,16 @@
+.slides {
+  display: flex;
+  flex-direction: row;
+  transition: all 0.75s ease-in-out;
+  overflow: visible;
+}
+
+.slides div {
+  box-sizing: border-box;
+  width: 100%;
+  flex: 1 0 auto;
+}
+
+.slides-container {
+  overflow: hidden;
+}

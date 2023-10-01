@@ -1,0 +1,38 @@
+.date-range-picker {
+  /* border-radius: 8px; */
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 16px;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  /* left: calc(-100% - 16px); */
+  top: 50%; /* Place the top edge at the vertical center */
+  left: 50%; /* Place the left edge at the horizontal center */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Translate back by half of its own width and height */
+  /* z-index: 1; */
+  padding-top: 22px;
+  background-color: white;
+
+  transition: all 0.75s ease-in-out; /* Add a smooth transition to the left property */
+}
+
+.show {
+  opacity: 100;
+  pointer-events: all;
+}
+
+.close-button {
+  width: 65%;
+  height: 40px;
+  border: 2px solid var(--color-primary-700);
+  color: var(--color-primary-700);
+  background-color: white;
+}
