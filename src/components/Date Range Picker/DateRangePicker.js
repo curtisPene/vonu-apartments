@@ -1,16 +1,9 @@
 import MonthPicker from "./MonthPicker";
 import "../../index.css";
 import DateGrid from "./DateGrid";
-import {
-  forwardRef,
-  useContext,
-  useEffect,
-  useImperativeHandle,
-  useReducer,
-} from "react";
+import { forwardRef, useEffect, useImperativeHandle, useReducer } from "react";
 import moment from "moment";
 import classes from "./DateRangePicker.module.css";
-import DateContext from "../../store/date-context";
 
 const dateActionReducer = (dateState, action) => {
   if (action.type === "INCREMENT_MONTH") {

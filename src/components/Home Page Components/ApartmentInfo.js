@@ -25,7 +25,7 @@ const ApartmentInfo = () => {
             </Link>
           </div>
         </div>
-        <Link className={classes["apartment-info-link"]}>
+        <Link to={"/apartment-info"} className={classes["apartment-info-link"]}>
           <p className="subbody-xs">Click on a card to learn more</p>
           <img src={smallChevron} alt="" />
         </Link>

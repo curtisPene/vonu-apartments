@@ -17,10 +17,6 @@ const Slides = forwardRef(({ slides, slideCount }, ref) => {
     return slidesRef.current.querySelectorAll("div")[0].clientWidth;
   };
 
-  const getSlideCount = () => {
-    return slidesRef.current.querySelectorAll("div");
-  };
-
   const moveLeft = () => {
     if (slideNum === slideCount) {
       return;

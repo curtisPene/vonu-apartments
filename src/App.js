@@ -4,7 +4,6 @@ import RootLayout from "./pages/RootLayout";
 import HomePage from "./pages/Home";
 import ResRequest, { action as requestAction } from "./pages/ResRequest";
 import ApartmentInfo from "./pages/ApartmentInfo";
-import DateProvider from "./store/DateProvider";
 import RequestConfirmationPage from "./pages/RequestConfirmation";
 import PoliciesPage from "./pages/Policies";
 

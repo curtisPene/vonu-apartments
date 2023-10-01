@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import { forwardRef } from "react";
 import closeIcon from "../assets/svg/close-icon.svg";
 
 const MobileNav = ({ className }) => {

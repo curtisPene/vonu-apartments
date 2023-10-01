@@ -1,6 +1,5 @@
 import { useState } from "react";
 import DateContext from "./date-context";
-const moment = require("moment");
 
 const DateProvider = (props) => {
   const [startDate, setStartDate] = useState(0);

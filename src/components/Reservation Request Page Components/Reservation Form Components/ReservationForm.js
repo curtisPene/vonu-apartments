@@ -3,10 +3,10 @@ import "../../../index.css";
 import { Form } from "react-router-dom";
 
 const ReservationForm = ({ children }) => {
-  const submitHandler = (e) => {
-    console.log("Submit");
-    e.preventDefault();
-  };
+  // const submitHandler = (e) => {
+  //   console.log("Submit");
+  //   e.preventDefault();
+  // };
   return (
     <Form className={classes["reservation-form"]} method="POST">
       {children}

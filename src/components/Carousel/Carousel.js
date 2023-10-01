@@ -1,7 +1,7 @@
 import CarouselControls from "./CarouselControls";
 import classes from "./Carousel.module.css";
 import Slides from "./Slides";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 
 const Carousel = ({ slides, slideCount, center }) => {
   const slidesRef = useRef(null);

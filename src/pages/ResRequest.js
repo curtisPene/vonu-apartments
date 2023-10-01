@@ -1,4 +1,4 @@
-import { redirect, useParams } from "react-router";
+import { redirect } from "react-router";
 import ChooseAnApartment from "../components/Reservation Request Page Components/Reservation Form Components/ChooseApartmentSection";
 import FormSection from "../components/Reservation Request Page Components/Reservation Form Components/FormSection";
 import FormSectionHeader from "../components/Reservation Request Page Components/Reservation Form Components/FormSectionHeader";
@@ -65,9 +65,9 @@ const action = async ({ request, params }) => {
     body: JSON.stringify(data),
   });
 
-  // if (!response.ok) {
-
-  // }
+  if (!response.ok) {
+    // Do something!!
+  }
   return redirect("/reservations/confirmation");
 };
 

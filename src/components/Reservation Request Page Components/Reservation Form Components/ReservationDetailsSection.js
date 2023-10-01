@@ -1,6 +1,6 @@
 import classes from "./ReservationDetailsSection.module.css";
 import "../../../index.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 const moment = require("moment");
 
 const ReservationDetailsSection = () => {
