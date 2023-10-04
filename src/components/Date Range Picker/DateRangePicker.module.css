@@ -38,6 +38,10 @@
   border-radius: 4px;
 }
 
+.close-button:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 425px) {
   .date-range-picker {
     width: 60%;

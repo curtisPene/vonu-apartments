@@ -59,6 +59,10 @@
   padding: 12px 16px;
 }
 
+.booking-button:hover {
+  cursor: pointer;
+}
+
 .arrival {
   display: flex;
   flex-direction: row;
