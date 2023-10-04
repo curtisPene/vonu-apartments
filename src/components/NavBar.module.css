@@ -12,6 +12,10 @@
   color: var(--color-accent-coral-500);
 }
 
+.nav-bar a.active {
+  color: var(--color-accent-coral-500);
+}
+
 @media (min-width: 481px) {
   .nav-bar {
     display: flex;

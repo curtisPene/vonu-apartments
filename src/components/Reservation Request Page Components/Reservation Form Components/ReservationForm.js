@@ -3,14 +3,15 @@ import "../../../index.css";
 import { Form } from "react-router-dom";
 
 const ReservationForm = ({ children }) => {
-  // const submitHandler = (e) => {
-  //   console.log("Submit");
-  //   e.preventDefault();
-  // };
+  const submitHandler = (e) => {
+    console.log("Submit");
+    e.preventDefault();
+  };
   return (
     <Form className={classes["reservation-form"]} method="POST">
       {children}
       <input
+        onClick={submitHandler}
         type="submit"
         value="Submit"
         className={`${classes.submit} drop-shadow`}
