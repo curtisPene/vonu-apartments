@@ -1,19 +1,18 @@
 import classes from "./ReservationForm.module.css";
 import "../../../index.css";
-import { Form } from "react-router-dom";
+import { Form, useNavigation } from "react-router-dom";
 
 const ReservationForm = ({ children }) => {
-  const submitHandler = (e) => {
-    console.log("Submit");
-    e.preventDefault();
-  };
+  const navigation = useNavigation();
+
   return (
     <Form className={classes["reservation-form"]} method="POST">
       {children}
       <input
-        onClick={submitHandler}
         type="submit"
-        value="Submit"
+        value={
+          navigation.state === "submitting" ? "Sending your details" : "Submit"
+        }
         className={`${classes.submit} drop-shadow`}
       />
     </Form>
