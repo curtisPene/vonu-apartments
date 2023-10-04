@@ -1,5 +1,6 @@
 import classes from "./ChooseApartmentSection.module.css";
-import apartment1 from "../../../assets/images/apt-1-form-images.jpg";
+import apartment1 from "../../../assets/production-images/apartment-1-homepage-link.JPG";
+import apartment2 from "../../../assets/production-images/apartment-2-homepage-link.jpg";
 import fourGuestsSvg from "../../../assets/svg/four-guests-icon.svg";
 import sixGuests from "../../../assets/svg/six-guests-icon.svg";
 import twoBedsSvg from "../../../assets/svg/two-beds-icon.svg";
@@ -78,7 +79,7 @@ const ChooseAnApartment = () => {
           {aptOnebuttonSected ? "" : "Select"}
         </button>
       </div>
-      <img src={apartment1} alt="Apartment 2" />
+      <img src={apartment2} alt="Apartment 2" />
       <div className={classes["info-and-selection-container"]}>
         <div className={classes["apartment-info"]}>
           <img
