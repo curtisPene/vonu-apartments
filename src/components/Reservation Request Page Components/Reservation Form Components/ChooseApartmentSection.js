@@ -81,8 +81,16 @@ const ChooseAnApartment = () => {
       <img src={apartment1} alt="Apartment 2" />
       <div className={classes["info-and-selection-container"]}>
         <div className={classes["apartment-info"]}>
-          <img src={sixGuests} alt="Four guests icon" />
-          <img src={threeBeds} alt="Two beds icon" />
+          <img
+            className={classes["apartment-image"]}
+            src={sixGuests}
+            alt="Four guests icon"
+          />
+          <img
+            className={classes["apartment-image"]}
+            src={threeBeds}
+            alt="Two beds icon"
+          />
         </div>
         <button
           ref={aptTwoButtonRef}

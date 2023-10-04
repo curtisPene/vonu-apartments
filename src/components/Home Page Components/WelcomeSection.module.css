@@ -9,19 +9,60 @@
   gap: 16px;
   padding: 16px 16px;
   color: white;
-  height: 342px;
 }
 
 .welcome-section-container h3,
 .welcome-section-container p {
   width: 82%;
   color: rgb(255, 255, 255);
+  z-index: 2;
+}
+
+.welcome-section-container p {
+  margin-bottom: 16px;
 }
 
 .plant {
-  /* width: 114px; */
-  height: 136px;
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 1;
+}
+
+@media (min-width: 481px) {
+  .welcome-section-container {
+    height: 280px;
+  }
+  .plant {
+    height: 184px;
+  }
+
+  .welcome-section-container h3,
+  .welcome-section-container p {
+    width: 60%;
+  }
+}
+
+@media (min-width: 769px) {
+  .welcome-section {
+    padding: 24px;
+  }
+  .welcome-section-container {
+    height: 302px;
+    padding-left: 0;
+  }
+
+  .welcome-section-container h3,
+  .welcome-section-container p {
+    width: 55%;
+    color: var(white);
+  }
+
+  .welcome-section-container h3 {
+    color: var(white);
+  }
+
+  .plant {
+    height: 240px;
+  }
 }

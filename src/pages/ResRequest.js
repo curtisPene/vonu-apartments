@@ -6,6 +6,7 @@ import GuestDetailsSection from "../components/Reservation Request Page Componen
 import ReservationDetailsSection from "../components/Reservation Request Page Components/Reservation Form Components/ReservationDetailsSection";
 import ReservationForm from "../components/Reservation Request Page Components/Reservation Form Components/ReservationForm";
 import WelcomeSection from "../components/Reservation Request Page Components/WelcomeSection";
+import { ScrollRestoration } from "react-router-dom";
 
 const ResRequestPage = () => {
   return (
@@ -25,6 +26,7 @@ const ResRequestPage = () => {
           <GuestDetailsSection />
         </FormSection>
       </ReservationForm>
+      <ScrollRestoration />
     </>
   );
 };

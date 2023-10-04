@@ -60,59 +60,61 @@ const dateActionReducer = (dateState, action) => {
   return dateState;
 };
 
-const DateRangePicker = forwardRef(({ onDone, className }, ref) => {
-  useImperativeHandle(ref, () => {
-    return {
-      getStartDate,
-      getEndDate,
+const DateRangePicker = forwardRef(
+  ({ onDone, className, onDateChange }, ref) => {
+    useImperativeHandle(ref, () => {
+      return {
+        getStartDate,
+        getEndDate,
+      };
+    });
+
+    const getStartDate = () => {
+      return dateState.startDate;
     };
-  });
 
-  const getStartDate = () => {
-    return dateState.startDate;
-  };
+    const getEndDate = () => {
+      return dateState.endDate;
+    };
 
-  const getEndDate = () => {
-    return dateState.endDate;
-  };
-
-  const monthChangeHandler = (type) => {
-    dispatchDateAction({
-      type,
+    const monthChangeHandler = (type) => {
+      dispatchDateAction({
+        type,
+      });
+    };
+    const dateClickHandler = (dateInfo) => {
+      dispatchDateAction({
+        type: "DATE_CLICK",
+        data: dateInfo,
+      });
+    };
+    const [dateState, dispatchDateAction] = useReducer(dateActionReducer, {
+      controlMoment: moment(),
+      startDate: undefined,
+      endDate: undefined,
+      onDateClick: dateClickHandler,
+      onMonthChange: monthChangeHandler,
     });
-  };
-  const dateClickHandler = (dateInfo) => {
-    dispatchDateAction({
-      type: "DATE_CLICK",
-      data: dateInfo,
-    });
-  };
-  const [dateState, dispatchDateAction] = useReducer(dateActionReducer, {
-    controlMoment: moment(),
-    startDate: undefined,
-    endDate: undefined,
-    onDateClick: dateClickHandler,
-    onMonthChange: monthChangeHandler,
-  });
 
-  useEffect(() => {
-    localStorage.setItem("checkIn", dateState.startDate);
-    localStorage.setItem("checkOut", dateState.endDate);
-  }, [dateState.startDate, dateState.endDate]);
+    useEffect(() => {
+      localStorage.setItem("checkIn", dateState.startDate);
+      localStorage.setItem("checkOut", dateState.endDate);
+      onDateChange(dateState.startDate, dateState.endDate);
+    }, [dateState, onDateChange]);
 
-  return (
-    <div className={className}>
-      <MonthPicker
-        controlMoment={dateState.controlMoment}
-        onMonthChange={dateState.onMonthChange}
-      />
-      <DateGrid
-        controlMoment={dateState.controlMoment}
-        onDateClick={dateState.onDateClick}
-        startDate={dateState.startDate}
-        endDate={dateState.endDate}
-      />
-      {/* <MonthPicker
+    return (
+      <div className={className}>
+        <MonthPicker
+          controlMoment={dateState.controlMoment}
+          onMonthChange={dateState.onMonthChange}
+        />
+        <DateGrid
+          controlMoment={dateState.controlMoment}
+          onDateClick={dateState.onDateClick}
+          startDate={dateState.startDate}
+          endDate={dateState.endDate}
+        />
+        {/* <MonthPicker
         isSecondaryMonthPicker={true}
         controlMoment={dateState.controlMoment}
         onMonthChange={monthChangeHandler}
@@ -124,11 +126,12 @@ const DateRangePicker = forwardRef(({ onDone, className }, ref) => {
         startDate={dateState.startDate}
         endDate={dateState.endDate}
       /> */}
-      <button className={classes["close-button"]} onClick={onDone}>
-        Done
-      </button>
-    </div>
-  );
-});
+        <button className={classes["close-button"]} onClick={onDone}>
+          Done
+        </button>
+      </div>
+    );
+  }
+);
 
 export default DateRangePicker;

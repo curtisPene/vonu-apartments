@@ -22,3 +22,27 @@ input:focus {
   border-radius: 4px;
   outline: 1px solid #bfbfbf;
 }
+
+@media (min-width: 425px) {
+  .reservation-details-container {
+    width: 65%;
+  }
+}
+
+@media (min-width: 769px) {
+  .reservation-details-container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 897px) {
+  .reservation-details-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .reservation-details-container {
+    width: 45%;
+  }
+}

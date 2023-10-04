@@ -30,11 +30,6 @@
   padding: 8px 8px;
 }
 
-.info-and-selection-container img {
-  padding: 1px;
-  height: 24px;
-}
-
 .apartment-info {
   display: flex;
   flex-direction: row;
@@ -71,4 +66,34 @@ button {
   background-image: url("/src/assets/svg/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* @media (min-width: 425px) {
+  .choose-an-apartment-container {
+    max-width: 312px;
+  }
+} */
+
+@media (min-width: 425px) {
+  .choose-an-apartment-container {
+    width: 65%;
+  }
+}
+
+@media (min-width: 769px) {
+  .choose-an-apartment-container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 897px) {
+  .choose-an-apartment-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .choose-an-apartment-container {
+    width: 45%;
+  }
 }

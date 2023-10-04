@@ -18,7 +18,7 @@
 
 .month-picker > p {
   font-family: "Roboto";
-  color: var(--color-primary-500);
+  color: var(--color-primary-700);
   font-weight: 400;
   font-size: 16px;
 }

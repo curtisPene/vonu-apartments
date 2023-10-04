@@ -17,10 +17,10 @@
     -50%,
     -50%
   ); /* Translate back by half of its own width and height */
-  /* z-index: 1; */
+  z-index: 4;
   padding-top: 22px;
   background-color: white;
-
+  border-radius: 8px;
   transition: all 0.75s ease-in-out; /* Add a smooth transition to the left property */
 }
 
@@ -35,4 +35,29 @@
   border: 2px solid var(--color-primary-700);
   color: var(--color-primary-700);
   background-color: white;
+  border-radius: 4px;
+}
+
+@media (min-width: 425px) {
+  .date-range-picker {
+    width: 60%;
+  }
+}
+
+@media (min-width: 769px) {
+  .date-range-picker {
+    width: 55%;
+  }
+}
+
+@media (min-width: 897px) {
+  .date-range-picker {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .date-range-picker {
+    width: 30%;
+  }
 }

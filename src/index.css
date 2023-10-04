@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* width: calc((100% - (N - 1) * 8px) / N * SpannedColumns); */
@@ -24,15 +25,7 @@ body {
   background-color: var(
     --color-neutrals-50
   ); /* Background color for the entire body */
-  padding-left: 16px; /* Left margin for the body */
-  padding-right: 16px; /* Right margin for the body */
-}
-
-html,
-body,
-#root,
-.wrapper {
-  height: 100%;
+  margin: 0 16px;
 }
 
 /* Heading 1 Style */
@@ -102,5 +95,84 @@ label {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media (min-width: 426px) {
+@media (min-width: 481px) {
+  body {
+    margin: 0 40px;
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    margin: 0 56px;
+  }
+
+  @media (min-width: 1200px) {
+    body {
+      margin: 0 240px;
+    }
+  }
+
+  h1 {
+    font-size: 36px;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 48px;
+    text-decoration: none;
+    text-transform: none;
+  }
+  .h-2-sm {
+    font-size: 32px;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 48px;
+    text-decoration: none;
+    text-transform: none;
+  }
+  h3 {
+    font-size: 29px;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: none;
+  }
+  .h-4-sm {
+    font-size: 26px;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: none;
+  }
+  p {
+    font-size: 18px;
+    font-family: "Lato";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: none;
+  }
+  .subbody-sm {
+    font-size: 16px;
+    font-family: "Lato";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: none;
+  }
+  .fine-print-sm {
+    font-size: 14px;
+    font-family: "Lato";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: none;
+  }
 }

@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 import closeIcon from "../assets/svg/close-icon.svg";
 
-const MobileNav = ({ className }) => {
+const MobileNav = ({ className, onClose, onNavClick }) => {
   return (
-    <div className={className}>
+    <div className={className} onClick={onNavClick}>
       <NavLink to="/">
         <p>Home</p>
       </NavLink>
@@ -16,7 +16,7 @@ const MobileNav = ({ className }) => {
       <NavLink to={"/policies"}>
         <p>Policies</p>
       </NavLink>
-      <img src={closeIcon} alt="close" />
+      <img src={closeIcon} alt="close" onClick={onClose} />
     </div>
   );
 };

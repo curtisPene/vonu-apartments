@@ -22,3 +22,27 @@
 .submit:active {
   transform: translateY(2px);
 }
+
+@media (min-width: 425px) {
+  .submit {
+    width: 65%;
+  }
+}
+
+@media (min-width: 769px) {
+  .submit {
+    width: 60%;
+  }
+}
+
+@media (min-width: 897px) {
+  .submit {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .submit {
+    width: 45%;
+  }
+}

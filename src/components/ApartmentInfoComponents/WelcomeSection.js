@@ -1,15 +1,18 @@
 import classes from "./WelcomeSection.module.css";
 import "../../index.css";
-
+import houseFront from "../../assets/production-images/apartment-info-header.JPG";
 const WelcomeSection = () => {
   return (
     <section className={classes["welcome-section"]}>
-      <h3>Welcome to Vonu Apartments – Your Fiji Retreat</h3>
-      <p>
-        Escape to your own piece of paradise at Vonu Apartments. Nestled in the
-        heart of Fiji's stunning Nasoso area, our apartments offer a comfortable
-        and inviting oasis for your stay in this tropical paradise.
-      </p>
+      <img src={houseFront} alt="" />
+      <div className={classes["welcome-section-text-content"]}>
+        <h3>Welcome to Vonu Apartments – Your Fiji Retreat</h3>
+        <p>
+          Experience a cozy retreat at Vonu Bed and Breakfast. Located in the
+          Nasoso, Nadi, our comfortable accommodations provide a warm and
+          welcoming stay for your visit.
+        </p>
+      </div>
     </section>
   );
 };

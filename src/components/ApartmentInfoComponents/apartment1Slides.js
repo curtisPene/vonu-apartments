@@ -1,8 +1,8 @@
-import room1 from "../../assets/images/Room Container-apartment-info-carousel-1.jpg";
-import room2 from "../../assets/images/Room Container-apartment-info-carousel-2.jpg";
-import room3 from "../../assets/images/Room Container-apartment-info-carousel-3.jpg";
-import room4 from "../../assets/images/Room Container-apartment-info-carousel-4.jpg";
-import room5 from "../../assets/images/Room Container-apartment-info-carousel-5.jpg";
+import room1 from "../../assets/production-images/slides-images/apartment-1/apartment-1-1.JPG";
+import room2 from "../../assets/production-images/slides-images/apartment-1/apartment-1-2.JPG";
+import room3 from "../../assets/production-images/slides-images/apartment-1/apartment-1-3.JPG";
+import room4 from "../../assets/production-images/slides-images/apartment-1/apartment-1-4.JPG";
+import room5 from "../../assets/production-images/slides-images/apartment-1/apartment-1-5.JPG";
 import classes from "./apartment1slides.module.css";
 
 const apartment1Slides = [

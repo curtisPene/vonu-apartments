@@ -2,8 +2,6 @@
   color: var(--color-primary-700);
   display: flex;
   flex-direction: column;
-  padding-left: 8px;
-  padding-right: 8px;
   gap: 16px;
   margin-top: 16px;
 }
@@ -12,6 +10,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  margin-bottom: 16px;
 }
 
 .policies-container section h3 {
@@ -24,4 +23,28 @@
 
 .policies-end {
   color: var(--color-accent-coral-500);
+}
+
+@media (min-width: 425px) {
+  .policies-container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 769px) {
+  .policies-container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 897px) {
+  .policies-container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .policies-container {
+    width: 90%;
+  }
 }

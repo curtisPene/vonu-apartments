@@ -1,5 +1,6 @@
 import classes from "./Policies.module.css";
 import "../index.css";
+import { ScrollRestoration } from "react-router-dom";
 
 const PoliciesPage = () => {
   return (
@@ -12,16 +13,16 @@ const PoliciesPage = () => {
         </p>
       </section>
       <section>
-        <h3>Bed Configuration and Capacity:</h3>
+        <h3>Apartment Capacity:</h3>
         <p>
           Apartment 1: This cozy 2-bedroom apartment features 2 Queen beds, with
           a strict maximum capacity of 4 guests. (Rates: $200/night + $100
           Management fee/stay)
         </p>
         <p>
-          Apartment 2: Our spacious 3-bedroom apartment offers 2 Queen beds and
-          2 single beds, accommodating a maximum of 6 guests. (Rates: $300/night
-          + $100 Management fee/stay)
+          Apartment 2: Our spacious 3-bedroom apartment offers 3 Queen beds,
+          accommodating a maximum of 6 guests. (Rates: $350/night + $100
+          Management fee/stay)
         </p>
       </section>
       <section>
@@ -34,7 +35,8 @@ const PoliciesPage = () => {
       <section>
         <h3>Check-in and Check-out Times:</h3>
         <p>
-          Check-out time is by 10 am, ensuring a smooth transition for incoming
+          Check-in time is from 12 pm, allowing you to settle in comfortably,
+          while check-out is by 10 am, ensuring a smooth transition for incoming
           guests.
         </p>
       </section>
@@ -48,6 +50,7 @@ const PoliciesPage = () => {
         importance to us at Vonu Apartments. Thank you for choosing us for your
         Fiji getaway.
       </p>
+      <ScrollRestoration />
     </div>
   );
 };

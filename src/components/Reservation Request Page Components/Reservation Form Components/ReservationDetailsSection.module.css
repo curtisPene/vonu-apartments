@@ -30,3 +30,27 @@ textarea {
   font-family: "roboto";
   padding: 8px 8px;
 }
+
+@media (min-width: 425px) {
+  .reservation-details-container {
+    width: 65%;
+  }
+}
+
+@media (min-width: 769px) {
+  .reservation-details-container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 897px) {
+  .reservation-details-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .reservation-details-container {
+    width: 45%;
+  }
+}

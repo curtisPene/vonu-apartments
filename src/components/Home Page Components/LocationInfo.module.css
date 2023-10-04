@@ -1,9 +1,11 @@
 .location-info-container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  justify-content: space-around;
   background-color: var(--color-primary-700);
-  padding: 24px 16px;
+  gap: 16px;
+  padding: 16px 16px;
+  margin: 24px 0;
 }
 
 .location-info-container p {
@@ -13,5 +15,39 @@
 .embedded-map {
   border-radius: 8px;
   width: 100%;
-  height: 153px;
+  height: 160px;
+}
+
+@media (min-width: 481px) {
+  .embedded-map {
+    width: 50%;
+  }
+}
+
+@media (min-width: 769px) {
+  .location-info-container {
+    padding: 32px;
+    gap: 32px;
+    margin-top: 0;
+  }
+  .location-info-container p {
+    width: 72%;
+  }
+
+  .embedded-map {
+    width: 50%;
+    height: 217px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .embedded-map {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .embedded-map {
+    width: 40%;
+  }
 }

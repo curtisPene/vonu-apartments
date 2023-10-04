@@ -1,11 +1,31 @@
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 16px;
   color: var(--color-primary-700);
   padding: 24px 8px;
 }
 
+.fine-print {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .footer p {
   color: var(--color-primary-700);
+  max-width: 650px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul a {
+  text-decoration: none;
+  color: var(--color-primary-700);
+}
+
+ul a:hover {
+  color: var(--color-accent-coral-500);
 }

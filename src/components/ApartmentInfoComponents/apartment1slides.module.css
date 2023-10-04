@@ -1,4 +1,18 @@
 .container img {
   height: 176px;
   width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+@media (min-width: 425px) {
+  .container img {
+    height: 220px;
+  }
+}
+
+@media (min-width: 769px) {
+  .container img {
+    height: 240px;
+  }
 }

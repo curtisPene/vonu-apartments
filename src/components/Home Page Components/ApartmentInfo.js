@@ -1,7 +1,7 @@
 import classes from "./ApartmentInfo.module.css";
 import "../../index.css";
-import apartment1 from "../../assets/images/apartment-1.jpg";
-import apartment2 from "../../assets/images/apartment-2.jpg";
+import apartment1 from "../../assets/production-images/apartment-1-homepage-link.JPG";
+import apartment2 from "../../assets/production-images/apartment-2-homepage-link.jpg";
 import smallChevron from "../../assets/svg/small-chevron.svg";
 import { Link } from "react-router-dom";
 
@@ -17,10 +17,10 @@ const ApartmentInfo = () => {
             with modern amenities and the spirit of Fijian hospitality.
           </p>
           <div className={classes["apartment-image-links"]}>
-            <Link to="/apartment-info">
+            <Link preventScrollReset={false} to="/apartment-info">
               <img src={apartment1} alt="Apartment 1" />
             </Link>
-            <Link to="/apartment-info">
+            <Link preventScrollReset={false} to="/apartment-info">
               <img src={apartment2} alt="Apartment 2" />
             </Link>
           </div>

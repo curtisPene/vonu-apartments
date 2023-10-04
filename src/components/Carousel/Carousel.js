@@ -3,7 +3,7 @@ import classes from "./Carousel.module.css";
 import Slides from "./Slides";
 import { useRef } from "react";
 
-const Carousel = ({ slides, slideCount, center }) => {
+const Carousel = ({ slides, slideCount, center, className }) => {
   const slidesRef = useRef(null);
 
   const nextClickHandler = () => {
@@ -15,7 +15,7 @@ const Carousel = ({ slides, slideCount, center }) => {
   };
 
   return (
-    <div className={classes.carousel}>
+    <div className={`${classes.carousel} ${className}`}>
       <CarouselControls
         center={center}
         onClickNext={nextClickHandler}
