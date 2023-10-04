@@ -14,6 +14,7 @@ const ReservationForm = ({ children }) => {
           navigation.state === "submitting" ? "Sending your details" : "Submit"
         }
         className={`${classes.submit} drop-shadow`}
+        disabled={navigation.state === "submitting" ? true : false}
       />
     </Form>
   );
