@@ -4,6 +4,7 @@ footer {
   gap: 16px;
   color: var(--color-primary-700);
   padding: 24px 8px;
+  justify-content: space-between;
 }
 
 .fine-print {

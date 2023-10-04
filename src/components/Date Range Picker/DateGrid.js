@@ -17,6 +17,7 @@ const DateGrid = ({
   const month = controlMoment.month();
   const firstDayOfMonth = controlMoment.startOf("month").day();
   const daysInMonth = controlMoment.daysInMonth();
+  const earliestDate = moment().add(2, "days");
 
   const dates = [];
   const daysOfWeek = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
@@ -38,9 +39,15 @@ const DateGrid = ({
     let isBetween = false;
     let start = false;
     let end = false;
+    let disabled = false;
     if (thisDate.isSame(startDate)) {
       start = true;
     }
+
+    if (thisDate.isBefore(earliestDate)) {
+      disabled = true;
+    }
+
     if (startDate && endDate) {
       if (thisDate.isBetween(startDate, endDate)) {
         isBetween = true;
@@ -59,7 +66,8 @@ const DateGrid = ({
         year={year}
         month={month}
         date={date}
-        onDateItemClicked={dateItemClickHandler}
+        onDateItemClicked={disabled ? () => {} : dateItemClickHandler}
+        disabled={disabled}
         isBetween={isBetween}
         start={start}
         end={end}

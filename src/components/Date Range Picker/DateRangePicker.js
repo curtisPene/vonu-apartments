@@ -42,6 +42,12 @@ const dateActionReducer = (dateState, action) => {
     }
 
     if (dateState.startDate && dateState.endDate === undefined) {
+      const minDate = moment(dateState.startDate.clone().add(2, "days"));
+      if (clickedDate.isBefore(minDate)) {
+        return {
+          ...dateState,
+        };
+      }
       return {
         ...dateState,
         endDate: clickedDate,
@@ -114,6 +120,9 @@ const DateRangePicker = forwardRef(
           startDate={dateState.startDate}
           endDate={dateState.endDate}
         />
+        <p style={{ fontSize: "10px", color: "#d5d5d6", marginTop: "-24px" }}>
+          Please note that we have a two night minimum stay.
+        </p>
         {/* <MonthPicker
         isSecondaryMonthPicker={true}
         controlMoment={dateState.controlMoment}

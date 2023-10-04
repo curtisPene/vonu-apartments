@@ -5,6 +5,7 @@ const DateItem = ({
   month,
   date,
   onDateItemClicked,
+  disabled,
   isBetween,
   start,
   end,
@@ -25,7 +26,7 @@ const DateItem = ({
         isBetween ? classes["in-range"] : undefined
       } ${start ? classes["start"] : undefined} ${
         end ? classes["end"] : undefined
-      }`}
+      } ${disabled ? classes.disabled : undefined}`}
       onClick={dateItemClickHandler}
     >
       <p>{date}</p>

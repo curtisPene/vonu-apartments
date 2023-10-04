@@ -16,13 +16,11 @@ const PoliciesPage = () => {
         <h3>Apartment Capacity:</h3>
         <p>
           Apartment 1: This cozy 2-bedroom apartment features 2 Queen beds, with
-          a strict maximum capacity of 4 guests. (Rates: $200/night + $100
-          Management fee/stay)
+          a strict maximum capacity of 4 guests.
         </p>
         <p>
           Apartment 2: Our spacious 3-bedroom apartment offers 3 Queen beds,
-          accommodating a maximum of 6 guests. (Rates: $350/night + $100
-          Management fee/stay)
+          accommodating a maximum of 6 guests.
         </p>
       </section>
       <section>

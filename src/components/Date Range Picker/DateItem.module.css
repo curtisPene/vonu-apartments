@@ -43,6 +43,10 @@
   z-index: -1;
 }
 
+.disabled {
+  color: #d5d5d6;
+}
+
 @media (max-width: 368px) {
   .date-item {
     padding: 4px;
