@@ -6,7 +6,7 @@ import navStyles from "./MobileNav.module.css";
 import { createPortal } from "react-dom";
 import menuIconClosed from "../assets/svg/nav-closed.svg";
 import menuIconOpen from "../assets/svg/nav-open.svg";
-import logo from "../assets/svg/vonu_temp_logo.svg";
+import logo from "../assets/production-images/vonu-apartments-logo.png";
 import NavBar from "./NavBar";
 
 const navPortal = document.getElementById("mobile-menu");
