@@ -19,6 +19,10 @@
 
 .choose-an-apartment-container > img {
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: intrinsic;
 }
 
 .info-and-selection-container {
