@@ -7,19 +7,19 @@ import classes from "./apartment1slides.module.css";
 
 const apartment1Slides = [
   <div className={classes.container}>
-    <img loading="lazy" src={room1} alt="Room 1" />
+    <img src={room1} alt="Room 1" />
   </div>,
   <div className={classes.container}>
-    <img loading="lazy" src={room2} alt="Room 2" />
+    <img src={room2} alt="Room 2" />
   </div>,
   <div className={classes.container}>
-    <img loading="lazy" src={room3} alt="Room 3" />
+    <img src={room3} alt="Room 3" />
   </div>,
   <div className={classes.container}>
-    <img loading="lazy" src={room4} alt="Room 4" />
+    <img src={room4} alt="Room 4" />
   </div>,
   <div className={classes.container}>
-    <img loading="lazy" src={room5} alt="Room 5" />
+    <img src={room5} alt="Room 5" />
   </div>,
 ];
 
