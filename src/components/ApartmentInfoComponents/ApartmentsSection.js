@@ -20,10 +20,11 @@ const ApartmentSection = () => {
 
       <div className={classes["apartment-two"]}>
         <p>
-          Escape to your own piece of paradise at Vonu Apartments. Nestled in
-          the heart of Fiji's stunning Nasoso area, our apartments offer a
-          comfortable and inviting oasis for your stay in this tropical
-          paradise.
+          Apartment 2 at Vonu Apartments is designed for your comfort and
+          relaxation. This spacious 3-bedroom apartment features 3 Queen beds,
+          comfortably accommodating up to 6 guests. Whether you're enjoying a
+          family vacation or traveling with friends, Apartment 2 provides ample
+          room for everyone to unwind and enjoy their stay.
         </p>
         <Carousel slides={apartment2Slides} slideCount={5} center={true} />
       </div>
