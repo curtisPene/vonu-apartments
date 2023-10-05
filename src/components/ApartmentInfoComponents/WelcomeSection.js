@@ -4,7 +4,7 @@ import houseFront from "../../assets/production-images/apartment-info-header.JPG
 const WelcomeSection = () => {
   return (
     <section className={classes["welcome-section"]}>
-      <img src={houseFront} alt="" />
+      <img loading="lazy" src={houseFront} alt="" />
       <div className={classes["welcome-section-text-content"]}>
         <h3>Welcome to Vonu Apartments – Your Fiji Retreat</h3>
         <p>

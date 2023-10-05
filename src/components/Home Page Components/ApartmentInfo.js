@@ -18,10 +18,10 @@ const ApartmentInfo = () => {
           </p>
           <div className={classes["apartment-image-links"]}>
             <Link preventScrollReset={false} to="/apartment-info">
-              <img src={apartment1} alt="Apartment 1" />
+              <img loading="lazy" src={apartment1} alt="Apartment 1" />
             </Link>
             <Link preventScrollReset={false} to="/apartment-info">
-              <img src={apartment2} alt="Apartment 2" />
+              <img loading="lazy" src={apartment2} alt="Apartment 2" />
             </Link>
           </div>
         </div>

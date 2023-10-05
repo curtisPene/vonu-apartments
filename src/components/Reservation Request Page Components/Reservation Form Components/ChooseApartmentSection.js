@@ -83,11 +83,13 @@ const ChooseAnApartment = () => {
       <div className={classes["info-and-selection-container"]}>
         <div className={classes["apartment-info"]}>
           <img
+            loading="lazy"
             className={classes["apartment-image"]}
             src={sixGuests}
             alt="Four guests icon"
           />
           <img
+            loading="lazy"
             className={classes["apartment-image"]}
             src={threeBeds}
             alt="Two beds icon"
