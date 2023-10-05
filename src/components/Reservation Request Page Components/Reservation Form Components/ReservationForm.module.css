@@ -8,6 +8,23 @@
   /* overflow: hidden; */
 }
 
+.agree {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 8px 8px;
+  justify-content: flex-start;
+  box-shadow: none;
+}
+
+.agree input:focus {
+  outline: none;
+  border: none;
+}
+
 .submit {
   vertical-align: middle;
   padding: 16px 0;
@@ -29,31 +46,35 @@
 }
 
 .submit:disabled {
-  background-color: rgb(12, 96, 68);
+  background-color: rgb(132, 133, 133);
   border: none;
   pointer-events: none;
 }
 
 @media (min-width: 425px) {
-  .submit {
+  .submit,
+  .agree {
     width: 65%;
   }
 }
 
 @media (min-width: 769px) {
-  .submit {
+  .submit,
+  .agree {
     width: 60%;
   }
 }
 
 @media (min-width: 897px) {
-  .submit {
+  .submit,
+  .agree {
     width: 50%;
   }
 }
 
 @media (min-width: 1025px) {
-  .submit {
+  .submit,
+  .agree {
     width: 45%;
   }
 }
