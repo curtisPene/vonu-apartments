@@ -35,6 +35,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
+      <p>Powered by Huluwa</p>
     </footer>
   );
 };
