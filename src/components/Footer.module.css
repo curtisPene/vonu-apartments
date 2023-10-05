@@ -30,3 +30,9 @@ ul a {
 ul a:hover {
   color: var(--color-accent-coral-500);
 }
+
+.huluwa {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}

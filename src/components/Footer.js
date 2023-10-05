@@ -35,7 +35,9 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <p>Powered by Huluwa</p>
+      <div className={classes.huluwa}>
+        <p>Powered by Huluwa</p>
+      </div>
     </footer>
   );
 };
