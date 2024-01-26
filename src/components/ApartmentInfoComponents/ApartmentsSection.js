@@ -15,8 +15,8 @@ const ApartmentSection = () => {
 
       <div className={classes["apartment-two"]}>
         <p>
-          Apartment 2. 3-bedroom apartment with 3 Queen beds, comfortably
-          accommodating up to 6 guests.
+          3-bedroom apartment with 3 Queen beds, comfortably accommodating up to
+          6 guests.
         </p>
         <Carousel slides={apartment2Slides} slideCount={5} center={true} />
       </div>
