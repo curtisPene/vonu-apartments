@@ -6,12 +6,11 @@ const LocationInfo = () => {
     <section>
       <div className={classes["location-info-container"]}>
         <p>
-          Nestled in the heart of Nasoso, Fiji, Vonu Apartments offers you an
-          ideal starting point for exploring the wonders of this tropical
-          paradise. Our address is Lot 10 Waqa Circle, Nasoso, Nadi, Fiji,
-          ensuring easy access to nearby attractions, dining options, and day
-          trip destinations. Explore the beauty of Fiji from our convenient and
-          tranquil location.
+          Located in the heart of Nasoso, Fiji, Vonu Apartments provides an
+          ideal launchpad for discovering the wonders of this tropical paradise.
+          You'll find us at Lot 10 Waqa Circle, Nasoso, Nadi, Fiji, ensuring
+          effortless access to nearby attractions, dining venues, and day trip
+          destinations. Explore the beauty of Fiji from our convenient location.
         </p>
         <iframe
           className={classes["embedded-map"]}

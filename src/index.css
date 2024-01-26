@@ -39,6 +39,10 @@ h1 {
   text-transform: none; /* No text transformation */
 }
 
+.text-accent {
+  color: var(--color-accent-coral-500);
+}
+
 /* Heading 3 Style */
 h3 {
   font-size: 21px; /* Font size */

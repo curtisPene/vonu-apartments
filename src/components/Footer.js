@@ -7,8 +7,8 @@ const Footer = () => {
     <footer className={classes.footer}>
       <div className={classes["fine-print"]}>
         <p className="fine-print-xs">
-          Join us in making your Fijian getaway an unforgettable experience. We
-          look forward to hosting you at Vonu Apartments.
+          Plan a memorable Fijian getaway with Vonu Apartments. We&#39;re
+          excited to host you and make your stay special.
         </p>
         <p className="fine-print-xs">
           For inquiries, reservations, or assistance, feel free to reach out to

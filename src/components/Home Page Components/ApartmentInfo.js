@@ -12,9 +12,8 @@ const ApartmentInfo = () => {
         <h3>Your Home in Paradise</h3>
         <div className={classes["body-content"]}>
           <p>
-            Immerse yourself in the tranquility of our thoughtfully designed
-            apartments. Each apartment offers a haven of relaxation, adorned
-            with modern amenities and the spirit of Fijian hospitality.
+            Enjoy the spaciousness of our apartments. Each unit comes equipped
+            with all the amenities necessary for a comfortable stay.
           </p>
           <div className={classes["apartment-image-links"]}>
             <Link preventScrollReset={false} to="/apartment-info">

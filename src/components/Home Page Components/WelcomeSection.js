@@ -86,10 +86,10 @@ const WelcomeSection = () => {
       <div className={classes["welcome-section-container"]}>
         <h3>Welcome to Vonu Apartments – Your Fiji Retreat</h3>
         <p>
-          Escape to your own piece of paradise at Vonu Apartments. Nestled in
-          the heart of Fiji's stunning Nasoso area, our apartments offer a
-          comfortable and inviting oasis for your stay in this tropical
-          paradise.
+          Vonu Apartments offer a homely experience, nestled in the secure and
+          peaceful Nasoso residential estate in Nadi. Providing a comfortable
+          environment, our apartments cater to those seeking a Fiji holiday
+          experience in Nadi or those on a work visit to the West.
         </p>
       </div>
       <img className={classes.plant} src={Plant} alt="Plant" />
