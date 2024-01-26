@@ -9,10 +9,10 @@ const PoliciesPage = () => {
         <p>
           At Vonu Apartments, <span className="text-accent">ensuring</span> your
           comfort and satisfaction <span className="text-accent">is</span> our
-          <span className="text-accent">top priority</span>. To ensure a
+          <span className="text-accent"> top priority</span>. To ensure a
           pleasant and enjoyable stay for all our guests, we have{" "}
-          <span className="text-accent">implemented</span>
-          the following policies:
+          <span className="text-accent">implemented</span> the following
+          policies:
         </p>
       </section>
       <section>
