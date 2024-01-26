@@ -16,7 +16,6 @@ const AmenitiesSection = () => {
           <li>Smart TV</li>
           <li>Air Conditioning</li>
           <li>Security grills</li>
-          <li>Air conditioning</li>
           <li>Fire alarms, extinguishers, and blankets</li>
           <li>Automatic solar outdoor lighting</li>
           <li>House keeping/Baby sitting services if required at a charge</li>
