@@ -30,17 +30,3 @@ li {
   margin-top: 16px;
   color: var(--color-accent-coral-500);
 }
-
-@media (min-width: 425px) {
-  .welcome-section img {
-    height: 280px;
-    object-fit: cover;
-    width: 100%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .welcome-section img {
-    height: 400px;
-  }
-}
