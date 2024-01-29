@@ -32,7 +32,7 @@
   /* border: 1px solid var(--color-primary-700); */
   border: none;
   color: white;
-  background-color: var(--color-primary-700);
+  background-color: var(--color-accent-coral-500);
   width: calc(90% + 16px);
   margin: 0 auto;
 }
@@ -46,7 +46,7 @@
 }
 
 .submit:disabled {
-  background-color: rgb(132, 133, 133);
+  background-color: rgb(83, 83, 83);
   border: none;
   pointer-events: none;
 }
