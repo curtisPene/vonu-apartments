@@ -78,7 +78,8 @@ label {
   text-transform: none; /* No text transformation */
 }
 
-.fine-print-xs {
+.fine-print-xs,
+a {
   font-size: 14px; /* Font size */
   font-family: "Lato"; /* Font family */
   font-weight: 400; /* Font weight (normal) */
